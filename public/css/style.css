@@ -1,0 +1,55 @@
+
+
+/* Matter.js Background */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000 !important;  /* Ensures full black */
+  height: 100%;
+}
+
+
+#wrapper-canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: -1;
+}
+
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+/* Card Styles */
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+h2, h3 {
+  color: #ffffff;
+}
